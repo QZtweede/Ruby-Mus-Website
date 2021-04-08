@@ -63,6 +63,23 @@ body{
 
 #feedBox{
     height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook-media{
+    position: absolute;
+    right: 65vw;
+}
+
+#instagram-media1{
+    height: 620px;
+}
+
+#instagram-media2{
+    height: 200px;
+
 }
 
 #calenderBox{
