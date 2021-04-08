@@ -68,18 +68,63 @@ body{
     align-items: center;
 }
 
+#Arrow{
+    border-style: solid;
+    border-width: 30px 0 30px 52.0px;
+    border-color: transparent transparent transparent white;
+}
+
+.innerA{
+    position: absolute;
+    border-style: solid;
+    border-width: 25px 0 25px 43.3px;
+    border-color: transparent transparent transparent #090909;
+    padding-left: 2px;
+    transition: 0.3s;
+}
+
+.innerA:hover{
+    border-color: transparent transparent transparent white; 
+}
+
+.Arrow-container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 200px;
+}
+
+.Arrow-container2{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 200px;
+    transform: scaleX(-1);
+}
+
 .facebook-media{
     position: absolute;
-    right: 65vw;
+    z-index: 0;
+    transform: scale(0.9,0.9);
+    opacity: 0.6;
 }
 
-#instagram-media1{
-    height: 620px;
+#instapost-1{
+    height: 1000px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#instagram-media2{
-    height: 200px;
-
+#instapost-2{
+    height: 1000px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #calenderBox{
