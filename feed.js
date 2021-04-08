@@ -1,8 +1,8 @@
 let Arrow1 = document.getElementById("B1").addEventListener("click", B1Clicked)
 let Arrow2 = document.getElementById("B2").addEventListener("click", B2Clicked)
 
-let Post1 = document.getElementById("instagram-media1")
-let Post2 = document.getElementById("instagram-media2")
+let Post1 = document.getElementById("instapost-1")
+let Post2 = document.getElementById("instapost-2")
 let Post3 = document.getElementById("facebook-media")
 
 
@@ -30,28 +30,49 @@ function Reset(){
     Post1.style.opacity = 0.5
     Post2.style.opacity = 0.5
     Post3.style.opacity = 0.5
-    Post3.style.marginLeft = "0px"
+    Post1.style.zIndex = 0
+    Post2.style.zIndex = 0
+    Post3.style.zIndex = 0
+    Post1.style.transform = "scale(0.7,0.7)"
+    Post2.style.transform = "scale(0.7,0.7)"
+    Post3.style.transform = "scale(0.7,0.7)"
+    Post1.style.pointerEvents = "none"
+    Post2.style.pointerEvents = "none"
+    Post3.style.pointerEvents = "none"
 }
 
 function Style(){
     if(counter === 0){
         Reset()
-        Post1.style.left = "0px"
-        Post2.style.left = "55vw"
+        Post1.style.marginLeft = "0px"
+        Post2.style.marginLeft = "-500px"
         Post3.style.marginLeft = "500px"
+        Post1.style.opacity = 1
+        Post1.style.zIndex = 1
+        Post1.style.transform = "scale(1.1,1.1)"
+        Post1.style.pointerEvents = "all"
     }
     
     if(counter === 1){
         Reset()
-        Post1.style.marginLeft = "-500px"
-        Post2.style.left = "0px"
+        Post1.style.marginLeft = "500px"
+        Post2.style.marginLeft = "0px"
         Post3.style.marginLeft = "-500px"
+        Post2.style.opacity = 1
+        Post2.style.zIndex = 1
+        Post2.style.transform = "scale(1.1,1.1)"
+        Post2.style.pointerEvents = "all"
     }
     
     if(counter === 2){
-        Post1.style.left = "55vw"
-        Post2.style.left = "-55vw"
+        Reset()
+        Post1.style.marginLeft = "-500px"
+        Post2.style.marginLeft = "500px"
         Post3.style.marginLeft = "0px"
+        Post3.style.opacity = 1
+        Post3.style.zIndex = 1
+        Post3.style.transform = "scale(1.1,1.1)"
+        Post3.style.pointerEvents = "all"
     }
 }
 
