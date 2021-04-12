@@ -84,6 +84,7 @@ body{
     position: absolute;
     left: 10px;
     top: -20px;
+    z-index: 2;
 }
 
 #feed-Content{
