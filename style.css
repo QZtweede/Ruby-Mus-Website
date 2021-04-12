@@ -97,20 +97,21 @@ body{
 #Arrow{
     border-style: solid;
     border-width: 30px 0 30px 52.0px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent #FF2D2D;
 }
 
 .innerA{
     position: absolute;
     border-style: solid;
     border-width: 25px 0 25px 43.3px;
-    border-color: transparent transparent transparent #090909;
+    border-color: transparent transparent transparent black;
     padding-left: 2px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .innerA:hover{
-    border-color: transparent transparent transparent white; 
+    border-color: transparent transparent transparent #FF2D2D; 
 }
 
 .Arrow-container1{
