@@ -75,7 +75,7 @@ function Style(){
         Post3.style.marginLeft = "-500px"
         Post2.style.opacity = 1
         Post2.style.zIndex = 1
-        Post2.style.transform = "scale(1.1,1.1)"
+        Post2.style.transform = "scale(1,1)"
         Post2.style.pointerEvents = "all"
     }
     
@@ -86,7 +86,7 @@ function Style(){
         Post3.style.marginLeft = "0px"
         Post3.style.opacity = 1
         Post3.style.zIndex = 1
-        Post3.style.transform = "scale(1.1,1.1)"
+        Post3.style.transform = "scale(1.3,1.3)"
         Post3.style.pointerEvents = "all"
     }
 }
