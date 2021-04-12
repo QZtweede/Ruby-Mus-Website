@@ -68,6 +68,31 @@ body{
     align-items: center;
 }
 
+#feedBox h1{
+    font-size: 200px;
+    text-shadow: 
+        -1px -1px 0px #FF2D2D,
+         0px -1px 0px #FF2D2D,
+         1px -1px 0px #FF2D2D,
+        -1px  0px 0px #FF2D2D,
+         1px  0px 0px #FF2D2D,
+        -1px  1px 0px #FF2D2D,
+         0px  1px 0px #FF2D2D,
+         1px  1px 0px #FF2D2D;
+    color: black;
+    font-family: "cinzel black";
+    position: absolute;
+    left: 10px;
+    top: -20px;
+}
+
+#feed-Content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
 #Arrow{
     border-style: solid;
     border-width: 30px 0 30px 52.0px;
