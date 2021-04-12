@@ -5,25 +5,40 @@ let Post1 = document.getElementById("instapost-1")
 let Post2 = document.getElementById("instapost-2")
 let Post3 = document.getElementById("facebook-media")
 
-
+var isReady = false;
 var counter = 0
+Style()
+Delay()
 
 function B1Clicked(){
-    counter++
-    if(counter >= 3){
-        counter = 0
-    }
-    console.log(counter)
-    Style()
+    if (isReady === true){
+        counter++
+        if(counter >= 3){
+            counter = 0
+        }
+        console.log(counter)
+        isReady = false
+        Style()
+        Delay()
+    }  
 }
 
 function B2Clicked(){
-    counter--
-    if(counter <= -1){
-        counter = 2
-    }  
-    console.log(counter)
-    Style()
+    if (isReady === true){
+        counter--
+        if(counter <= -1){
+            counter = 2
+        }  
+        console.log(counter)
+        isReady = false
+        Style()
+        Delay()
+    }
+}
+
+async function Delay(){
+    await sleep(800)
+    isReady = true
 }
 
 function Reset(){
@@ -49,7 +64,7 @@ function Style(){
         Post3.style.marginLeft = "500px"
         Post1.style.opacity = 1
         Post1.style.zIndex = 1
-        Post1.style.transform = "scale(1.1,1.1)"
+        Post1.style.transform = "scale(1,1)"
         Post1.style.pointerEvents = "all"
     }
     
@@ -75,5 +90,10 @@ function Style(){
         Post3.style.pointerEvents = "all"
     }
 }
+
+function sleep(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+  }
+
 
 
