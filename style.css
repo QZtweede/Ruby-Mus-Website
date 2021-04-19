@@ -62,7 +62,67 @@ body{
 #musicContainer{
     width: 100%;
     height: 450px;
-    background: white;
+    /* background-image: url(img/img2.jfif); */
+    background:black;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#musicContainer h1{
+    margin-top: 60px;
+    color: white;
+    font-family: "cinzel black";
+    font-size: 100px;
+}
+
+#playbuttonContainer{
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#pb1{
+    width: inherit;
+    height: inherit;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#pb2{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0 30px 52.0px;
+    border-color: transparent transparent transparent #ffffff;
+    margin-left: 10px;
+}
+
+#eqContainer{
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.EQ{
+    height: 10px;
+    width: 40px;
+    background: linear-gradient(white, gold);
+    background-size: 40px 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.5s;
 }
 
 #feedBox{
