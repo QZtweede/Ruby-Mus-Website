@@ -7,6 +7,10 @@
 	vertical-align: baseline;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 body, html{
     width: 100vw;
     height: 100vh;
@@ -165,5 +169,15 @@ body{
 
 #Footer{
     height: 100px;
+    background: linear-gradient(transparent, black, black);
+}
+
+#autoscrollTop{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
     background: white;
+    border-radius: 20px;
 }
