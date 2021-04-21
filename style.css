@@ -7,10 +7,6 @@
 	vertical-align: baseline;
 }
 
-::-webkit-scrollbar{
-    display: none;
-}
-
 body, html{
     width: 100vw;
     height: 100vh;
@@ -23,6 +19,10 @@ body{
     background-size: 100% 100%;
     background-attachment: fixed;
     z-index: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 .Container{
@@ -148,7 +148,6 @@ body{
     position: absolute;
     left: 10px;
     top: -20px;
-    z-index: 2;
 }
 
 #feed-Content{
@@ -168,7 +167,7 @@ body{
     position: absolute;
     border-style: solid;
     border-width: 25px 0 25px 43.3px;
-    border-color: transparent transparent transparent black;
+    border-color: transparent transparent transparent #090909;
     padding-left: 2px;
     transition: 0.3s;
     cursor: pointer;
@@ -223,21 +222,77 @@ body{
     transition: 1s;
 }
 
-#calenderBox{
+#calendarBox{
     height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calendarBox h1{
+    font-size: 140px;
+    text-shadow: 
+        -1px -1px 0px #FF2D2D,
+         0px -1px 0px #FF2D2D,
+         1px -1px 0px #FF2D2D,
+        -1px  0px 0px #FF2D2D,
+         1px  0px 0px #FF2D2D,
+        -1px  1px 0px #FF2D2D,
+         0px  1px 0px #FF2D2D,
+         1px  1px 0px #FF2D2D;
+    color: black;
+    font-family: "cinzel black";
+    position: absolute;
+    right: 135px;
+    top: 50px;
+    z-index: 100;
+}
+
+#img1{
+    width: 750px;
+    height: 600px;
+    left: 50px;
+    top: 35px;
+    position: absolute;
+    border-radius: 3px;
 }
 
 #Footer{
     height: 100px;
-    background: linear-gradient(transparent, black, black);
+    background: black;
+    color:#e6b030;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
 }
 
-#autoscrollTop{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 70px;
-    height: 70px;
-    background: white;
-    border-radius: 20px;
-}
+
+.fa{
+    padding: 20px;
+    font-size: 40px;
+    float: left;
+    text-decoration: none;
+    right: -140px;
+    position: relative;
+  }
+
+  
+.fa-facebook {
+    /* background: #e6b030; */
+    color: #e6b030;
+ 
+  }
+
+.fa-instagram{
+    /* background: #e6b030; */
+    color: #e6b030;
+    
+  }
+
+  span{
+      font-size: 30px;
+      margin: 10px;
+      position: relative;
+    top: -5px;
+  }
