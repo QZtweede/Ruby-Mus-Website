@@ -41,7 +41,7 @@ async function Delay(){
     isReady = true
 }
 
-function Reset(){
+function resetStyle(){
     Post1.style.opacity = 0.5
     Post2.style.opacity = 0.5
     Post3.style.opacity = 0.5
@@ -58,7 +58,7 @@ function Reset(){
 
 function Style(){
     if(counter === 0){
-        Reset()
+        resetStyle()
         Post1.style.marginLeft = "0px"
         Post2.style.marginLeft = "-500px"
         Post3.style.marginLeft = "500px"
@@ -69,24 +69,24 @@ function Style(){
     }
     
     if(counter === 1){
-        Reset()
+        resetStyle()
         Post1.style.marginLeft = "500px"
         Post2.style.marginLeft = "0px"
         Post3.style.marginLeft = "-500px"
         Post2.style.opacity = 1
         Post2.style.zIndex = 1
-        Post2.style.transform = "scale(1.1,1.1)"
+        Post2.style.transform = "scale(1,1)"
         Post2.style.pointerEvents = "all"
     }
     
     if(counter === 2){
-        Reset()
+        resetStyle()
         Post1.style.marginLeft = "-500px"
         Post2.style.marginLeft = "500px"
         Post3.style.marginLeft = "0px"
         Post3.style.opacity = 1
         Post3.style.zIndex = 1
-        Post3.style.transform = "scale(1.1,1.1)"
+        Post3.style.transform = "scale(1.3,1.3)"
         Post3.style.pointerEvents = "all"
     }
 }
