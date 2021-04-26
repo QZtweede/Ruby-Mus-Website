@@ -112,7 +112,23 @@ body{
     z-index: -1;
 }
 
+#particleContainer2{
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -1;
+}
+
 .particle{
+    border-radius: 10px;
+}
+
+.particle2{
     border-radius: 10px;
 }
 
@@ -179,6 +195,72 @@ body{
     height: 50px;
     width: 50px;
     background: #E6B030;
+}
+
+.particle2:nth-child(1){
+    height: 50px;
+    width: 50px;
+    background: #330049;
+}
+
+.particle2:nth-child(2){
+    height: 30px;
+    width: 30px;
+    background: #120061;
+}
+
+.particle2:nth-child(3){
+    height: 80px;
+    width: 80px;
+    background: #330049;
+}
+
+.particle2:nth-child(4){
+    height: 50px;
+    width: 50px;
+    background: #E6B030;
+}
+
+.particle2:nth-child(5){
+    height: 50px;
+    width: 50px;
+    background: #330049;
+}
+
+.particle2:nth-child(6){
+    height: 30px;
+    width: 30px;
+    background: #120061;
+}
+
+.particle2:nth-child(7){
+    height: 50px;
+    width: 50px;
+    background: #330049;
+}
+
+.particle2:nth-child(8){
+    height: 30px;
+    width: 30px;
+    background: #120061;
+}
+
+.particle2:nth-child(9){
+    height: 50px;
+    width: 50px;
+    background: #E6B030;
+}
+
+.particle2:nth-child(10){
+    height: 80px;
+    width: 80px;
+    background: #120061;
+}
+
+.particle2:nth-child(11){
+    height: 30px;
+    width: 30px;
+    background: #330049;
 }
 
 #bannername{
