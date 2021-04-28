@@ -20,6 +20,8 @@ body{
     z-index: 0;
 }
 
+
+
 ::-webkit-scrollbar{
     display: none;
 }
@@ -59,7 +61,7 @@ body{
          0px  1px 0px #FF2D2D,
          1px  1px 0px #FF2D2D;
     color: black;
-    font-family: "cinzel black";
+    font-family: 'Cinzel', serif;
     position: absolute;
     right: 113px;
     top: 50px;
@@ -516,4 +518,11 @@ body{
       margin: 10px;
       position: relative;
     top: -5px;
+<<<<<<< Updated upstream
   }
+=======
+  }
+
+
+ 
+>>>>>>> Stashed changes
