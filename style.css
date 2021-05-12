@@ -265,13 +265,49 @@ body{
     background: #330049;
 }
 
-#bannername{
+.rubyname{
     position: absolute;
     width: 50vw;
-    height: 105vh;
+    height: 1020px;
     left: 100px;
     top: 0px;
+    display: flex;
+    margin: 0 1px;
+    flex-direction: column-reverse;
+    /* background-color: red; */
     z-index: 2;
+}
+
+.mus1{
+    --animate-duration: 1s;
+}
+
+.mus2{
+    --animate-duration: 1.2s;
+}
+
+.mus3{
+    --animate-duration: 1.4s;
+}
+
+.mus4{
+    --animate-duration: 1.6s;
+}
+
+.mus5{
+    --animate-duration: 1.8s;
+}
+
+.mus6{
+    --animate-duration: 2.0s;
+}
+
+.mus7{
+    --animate-duration: 2.2s;
+}
+
+.mus8{
+    --animate-duration: 2.4s;
 }
 
 #bannerimg{
