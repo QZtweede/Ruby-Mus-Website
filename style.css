@@ -46,7 +46,7 @@ body{
 
 #aboutPage{
     margin-bottom: -50px;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 2;
 }
 
@@ -101,9 +101,9 @@ body{
 
 #about-img1{
     width: 532px;
-    height: auto;
+    height: 600px;
     left: 180px;
-    top: -30px;
+    top: 15px;
     position: absolute;
 
 }
@@ -117,6 +117,36 @@ body{
     font-family: 'Consolas', serif;
     font-size: 19px;
 
+}
+
+.corner {
+    position: absolute;
+    background: yellow;
+    width: 4px;
+    height: 30px
+}
+.TL {
+    top: -7px;
+    left: 159px;
+   
+}
+
+.TL1 {
+    top: -21px;
+    left: 172px;
+    transform: rotate(90deg);
+}
+
+.BR {
+    top: 586px;
+    left: 710px;
+   
+}
+
+.BR1 {
+    top: 599px;
+    left: 696px;
+    transform: rotate(90deg);
 }
 
 .rubyname{
@@ -410,6 +440,24 @@ body{
     top: 50px;
     z-index: 100;
 }
+
+.border{
+    display: flex;
+    border-bottom: 3px solid yellow;
+    justify-content: space-between;
+    margin: 15px;
+    /* margin-top: 80px; */
+    color: white;
+    width: 500px;
+    /* margin-right: 0px; */
+    /* margin-top: 0px; */
+    position: relative;
+    right: -320px;
+    font-family: 'Consolas', serif;
+    font-size: 19px;
+
+    
+  }
 
 #img1{
     width: 764px;
