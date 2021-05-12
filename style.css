@@ -121,7 +121,7 @@ body{
 
 .corner {
     position: absolute;
-    background: yellow;
+    background: #E6B030;
     width: 4px;
     height: 30px
 }
