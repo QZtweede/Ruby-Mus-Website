@@ -121,8 +121,8 @@ body{
 
 .rubyname{
     position: absolute;
-    width: 50vw;
-    height: 1020px;
+    width: 48vw;
+    /* height: 1020px; */
     left: 100px;
     top: 0px;
     display: flex;
