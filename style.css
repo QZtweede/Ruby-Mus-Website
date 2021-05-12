@@ -47,6 +47,7 @@ body{
 #aboutPage{
     margin-bottom: -50px;
     overflow: hidden;
+    z-index: 2;
 }
 
 #aboutPage h1{
@@ -84,11 +85,18 @@ body{
     z-index: 2;
 }
 
+#blurContainer{
+    position: absolute;
+    top: 904px;
+    z-index: 1;
+}
+
 .Blur{
     height: 600px;
-    width: 80%;
+    width: 70%;
     position: absolute;
-    background: yellow;
+    background: transparent;
+    z-index: 1;
 }
 
 #about-img1{
