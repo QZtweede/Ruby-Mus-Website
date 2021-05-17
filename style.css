@@ -137,20 +137,20 @@ body{
 }
 
 .TL1 {
-    top: 20px;
-    left: 10px;
+    top: 7px;
+    left: 23px;
     transform: rotate(90deg);
 }
 
 .BR {
-    top: 586px;
-    left: 710px;
+    top: 535px;
+    left: 810px;
    
 }
 
 .BR1 {
-    top: 599px;
-    left: 696px;
+    top: 548px;
+    left: 795px;
     transform: rotate(90deg);
 }
 
