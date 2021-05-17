@@ -448,7 +448,7 @@ body{
 
 .border{
     display: flex;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid #e6b030;
     justify-content: space-between;
     margin: 15px;
     /* margin-top: 80px; */
@@ -513,7 +513,27 @@ body{
   }
 
 #ticketsButton{
-    height: 50px;
-    width: 100px;
-    background-color: red;
+    height: 120px;
+    width: 500px;
+    background-color: #e6b030;
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#ticketsButton:hover{
+    transform: scale(1.1, 1.1);
+}
+
+#ticketsButton a{
+    font-family: consolas;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
 }
