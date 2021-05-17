@@ -128,7 +128,9 @@ body{
     position: absolute;
     background: #E6B030;
     width: 4px;
-    height: 30px
+    height: 30px;
+    margin: 10px;
+    top: -5px;
 }
 .TL {
     top: 20px;
@@ -210,8 +212,8 @@ body{
 
 #musicContainer{
     height: 450px;
-    background-image: url(/img/cover.png);
-    /* background:black; */
+    /* background-image: url(/img/cover.png); */
+    background:black;
     background-position: center;
     background-size:cover;
     display: flex;
@@ -252,8 +254,8 @@ body{
 }
 
 #pb1{
-    width: inherit;
-    height: inherit;
+    width: 100px;
+    height: 90px;
     border: 5px solid white;
     border-radius: 50%;
 }
@@ -505,7 +507,7 @@ body{
     
   }
 
-  span{
+a span{
       font-size: 30px;
       margin: 10px;
       position: relative;
@@ -536,4 +538,103 @@ body{
     font-size: 40px;
     text-decoration: none;
     color: white;
+}
+
+.detailsContainer{
+    height: 150px;
+    width: 150px;   
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#dC1{
+    top: 50px;
+    right: 180px;
+}
+
+#dC2{
+    bottom: 30px;
+    left: 160px;
+    transform: rotate(180deg) scale(0.8,0.8);
+}
+
+.detailsContainer span{   
+    background: #e6b030;
+    position: absolute;
+}
+
+.detailsContainer span:nth-child(1){
+    height: 140px;
+    width: 4px;
+}
+
+.detailsContainer span:nth-child(2){
+    height: 4px;
+    width: 140px;
+}
+
+.detailsContainer span:nth-child(3){
+    height: 100px;
+    width: 4px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.detailsContainer span:nth-child(4){
+    height: 4px;
+    width: 100px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.detailsContainer span:nth-child(5){
+    height: 4px;
+    width: 50px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.detailsContainer span:nth-child(6){
+    height: 50px;
+    width: 4px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+#backUp{
+    height: 75px;
+    width: 75px;
+    border: 5px solid #e6b030;
+    border-radius: 20px;
+    position:fixed;
+    right: 33px;
+    bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInBackUp 4s;
+}
+
+#backUp span:nth-child(1){
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    border-color: transparent transparent #e6b030 transparent;
+    margin-bottom: 30px;
+}
+
+#backUp span:nth-child(2){
+    height: 40px;
+    width: 15px;
+    background-color: #e6b030;
+    position: absolute;
+    margin-top: 30px;
+}
+
+@keyframes fadeInBackUp{
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
