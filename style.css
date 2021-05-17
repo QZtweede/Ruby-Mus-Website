@@ -121,7 +121,7 @@ body{
 
 .corner {
     position: absolute;
-    background: yellow;
+    background: #E6B030;
     width: 4px;
     height: 30px
 }
@@ -205,10 +205,10 @@ body{
 
 #musicContainer{
     height: 450px;
-    /* background-image: url(img/img2.jfif); */
-    background:black;
+    background-image: url(/img/cover.png);
+    /* background:black; */
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,14 +217,25 @@ body{
 }
 
 #musicContainer h1{
-    margin-top: 60px;
-    color: white;
+    margin-top: 100px;
+    font-size: 180px;
+    text-shadow: 
+        -1px -1px 0px #FF2D2D,
+         0px -1px 0px #FF2D2D,
+         1px -1px 0px #FF2D2D,
+        -1px  0px 0px #FF2D2D,
+         1px  0px 0px #FF2D2D,
+        -1px  1px 0px #FF2D2D,
+         0px  1px 0px #FF2D2D,
+         1px  1px 0px #FF2D2D;
+    color: black;
     font-family: 'Cinzel', serif;
-    font-size: 100px;
+    position: absolute;
+    margin-bottom: 500px;
 }
 
 #playbuttonContainer{
-    margin-top: 20px;
+    margin-top: 150px;
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -232,12 +243,13 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    
 }
 
 #pb1{
     width: inherit;
     height: inherit;
-    border: 2px solid white;
+    border: 5px solid white;
     border-radius: 50%;
 }
 
@@ -249,6 +261,43 @@ body{
     border-width: 30px 0 30px 52.0px;
     border-color: transparent transparent transparent #ffffff;
     margin-left: 10px;
+    transition: 0.5s;
+}
+
+#pb3{
+    margin-left: 25px;
+    transition: 0.5s;
+}
+
+#pb4{
+    margin-right: 25px;
+    transition: 0.5s;
+}
+
+.pause{
+    position: absolute;
+    height: 40px;
+    width: 15px;
+    background: white;
+}
+
+#logoContainer{
+    height: 100px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+#logoContainer img{
+    height: 50px;
+    width: 50px;
+}
+
+#musicPage h2{
+    margin-top: 50px;
+    font-size: 20px;
+    color: white;
+    font-family: consolas;
 }
 
 #eqContainer{
@@ -262,7 +311,7 @@ body{
 .EQ{
     height: 10px;
     width: 40px;
-    background: linear-gradient(white, gold);
+    background: linear-gradient(black, black, #FF2D2D);
     background-size: 40px 40px;
     margin-left: 5px;
     margin-right: 5px;
