@@ -100,7 +100,7 @@ body{
 }
 
 #about-img1{
-    width: 532px;
+    width: 1000px;
     height: 600px;
     left: 180px;
     top: 15px;
@@ -126,14 +126,14 @@ body{
     height: 30px
 }
 .TL {
-    top: -7px;
-    left: 159px;
+    top: 20px;
+    left: 10px;
    
 }
 
 .TL1 {
-    top: -21px;
-    left: 172px;
+    top: 20px;
+    left: 10px;
     transform: rotate(90deg);
 }
 
