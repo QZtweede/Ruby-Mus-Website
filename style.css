@@ -7,6 +7,11 @@
 	vertical-align: baseline;
 }
 
+@font-face {
+    font-family: 'Consolas', serif;
+    src: url(Fonts/consola.ttf);
+}
+
 body, html{
     width: 100vw;
     height: 100vh;
@@ -506,3 +511,9 @@ body{
       position: relative;
     top: -5px;
   }
+
+#ticketsButton{
+    height: 50px;
+    width: 100px;
+    background-color: red;
+}
